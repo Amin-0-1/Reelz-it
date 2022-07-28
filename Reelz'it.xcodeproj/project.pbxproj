@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30270959289328A00062DB84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30270958289328A00062DB84 /* LaunchScreen.storyboard */; };
+		3027096228932A9D0062DB84 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027096028932A9D0062DB84 /* HomeVC.swift */; };
+		3027096328932A9D0062DB84 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3027096128932A9D0062DB84 /* HomeVC.xib */; };
 		30C26FFE2893192500BB94EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C26FFD2893192500BB94EE /* AppDelegate.swift */; };
 		30C270002893192500BB94EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C26FFF2893192500BB94EE /* SceneDelegate.swift */; };
-		30C270022893192500BB94EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C270012893192500BB94EE /* ViewController.swift */; };
-		30C270052893192500BB94EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C270032893192500BB94EE /* Main.storyboard */; };
 		30C270072893192700BB94EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C270062893192700BB94EE /* Assets.xcassets */; };
-		30C2700A2893192700BB94EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C270082893192700BB94EE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30270958289328A00062DB84 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3027096028932A9D0062DB84 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3027096128932A9D0062DB84 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		30C26FFA2893192500BB94EE /* Reelz'it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reelz'it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C26FFD2893192500BB94EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30C26FFF2893192500BB94EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30C270012893192500BB94EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		30C270042893192500BB94EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30C270062893192700BB94EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30C270092893192700BB94EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30C2700B2893192700BB94EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +37,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30270954289325E30062DB84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		30270955289325E60062DB84 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				30270957289326060062DB84 /* Resource */,
+				30C26FFD2893192500BB94EE /* AppDelegate.swift */,
+				30C26FFF2893192500BB94EE /* SceneDelegate.swift */,
+				30C2700B2893192700BB94EE /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		30270956289325E90062DB84 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3027095A289329BA0062DB84 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		30270957289326060062DB84 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				30270958289328A00062DB84 /* LaunchScreen.storyboard */,
+				30C270062893192700BB94EE /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3027095A289329BA0062DB84 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3027095D289329D50062DB84 /* data */,
+				3027095C289329CF0062DB84 /* domain */,
+				3027095B289329C50062DB84 /* presetation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3027095B289329C50062DB84 /* presetation */ = {
+			isa = PBXGroup;
+			children = (
+				3027095E289329DA0062DB84 /* View */,
+			);
+			path = presetation;
+			sourceTree = "<group>";
+		};
+		3027095C289329CF0062DB84 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		3027095D289329D50062DB84 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		3027095E289329DA0062DB84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3027096028932A9D0062DB84 /* HomeVC.swift */,
+				3027096128932A9D0062DB84 /* HomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		30C26FF12893192500BB94EE = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +132,9 @@
 		30C26FFC2893192500BB94EE /* Reelz'it */ = {
 			isa = PBXGroup;
 			children = (
-				30C26FFD2893192500BB94EE /* AppDelegate.swift */,
-				30C26FFF2893192500BB94EE /* SceneDelegate.swift */,
-				30C270012893192500BB94EE /* ViewController.swift */,
-				30C270032893192500BB94EE /* Main.storyboard */,
-				30C270062893192700BB94EE /* Assets.xcassets */,
-				30C270082893192700BB94EE /* LaunchScreen.storyboard */,
-				30C2700B2893192700BB94EE /* Info.plist */,
+				30270954289325E30062DB84 /* Common */,
+				30270955289325E60062DB84 /* Application */,
+				30270956289325E90062DB84 /* Features */,
 			);
 			path = "Reelz'it";
 			sourceTree = "<group>";
@@ -125,9 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C2700A2893192700BB94EE /* LaunchScreen.storyboard in Resources */,
 				30C270072893192700BB94EE /* Assets.xcassets in Resources */,
-				30C270052893192500BB94EE /* Main.storyboard in Resources */,
+				3027096328932A9D0062DB84 /* HomeVC.xib in Resources */,
+				30270959289328A00062DB84 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C270022893192500BB94EE /* ViewController.swift in Sources */,
+				3027096228932A9D0062DB84 /* HomeVC.swift in Sources */,
 				30C26FFE2893192500BB94EE /* AppDelegate.swift in Sources */,
 				30C270002893192500BB94EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		30C270032893192500BB94EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30C270042893192500BB94EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		30C270082893192700BB94EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30C270092893192700BB94EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		30C2700C2893192700BB94EE /* Debug */ = {
@@ -291,7 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AK2TZ88ALS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Reelz'it/Info.plist";
+				INFOPLIST_FILE = "Reelz'it/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +372,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AK2TZ88ALS;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Reelz'it/Info.plist";
+				INFOPLIST_FILE = "Reelz'it/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
