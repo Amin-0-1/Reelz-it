@@ -7,9 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3026075C28948FE3008639B6 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 3026075B28948FE3008639B6 /* YouTubeiOSPlayerHelper */; };
+		302607632894AD00008639B6 /* YoutubePlayerView in Frameworks */ = {isa = PBXBuildFile; productRef = 302607622894AD00008639B6 /* YoutubePlayerView */; };
 		30270959289328A00062DB84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30270958289328A00062DB84 /* LaunchScreen.storyboard */; };
 		3027096228932A9D0062DB84 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027096028932A9D0062DB84 /* HomeVC.swift */; };
 		3027096328932A9D0062DB84 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3027096128932A9D0062DB84 /* HomeVC.xib */; };
+		30270968289333020062DB84 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30270967289333020062DB84 /* AppCoordinator.swift */; };
+		3027096B2893363A0062DB84 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 3027096A2893363A0062DB84 /* Rswift */; };
+		30270970289338860062DB84 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027096F289338860062DB84 /* HomeViewModel.swift */; };
+		302709722893388E0062DB84 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709712893388E0062DB84 /* HomeCoordinator.swift */; };
+		30270978289339D60062DB84 /* HomeVMContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30270977289339D60062DB84 /* HomeVMContract.swift */; };
+		30270980289417DE0062DB84 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027097E289417DE0062DB84 /* VideoCell.swift */; };
+		30270981289417DE0062DB84 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3027097F289417DE0062DB84 /* VideoCell.xib */; };
+		302709832894187F0062DB84 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709822894187F0062DB84 /* R.generated.swift */; };
+		302709862894316D0062DB84 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 302709852894316D0062DB84 /* RxCocoa */; };
+		302709882894316D0062DB84 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 302709872894316D0062DB84 /* RxRelay */; };
+		3027098A2894316D0062DB84 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 302709892894316D0062DB84 /* RxSwift */; };
+		3027098C289431EB0062DB84 /* RepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027098B289431EB0062DB84 /* RepositoryInterface.swift */; };
+		3027098F289431F80062DB84 /* HomeUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027098E289431F80062DB84 /* HomeUsecase.swift */; };
+		30270991289432610062DB84 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30270990289432610062DB84 /* HomeRepository.swift */; };
+		30270997289433320062DB84 /* PlaylistResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30270996289433320062DB84 /* PlaylistResponseModel.swift */; };
+		3027099A289436CB0062DB84 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30270999289436CB0062DB84 /* CustomError.swift */; };
+		3027099D289439B70062DB84 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3027099C289439B70062DB84 /* Moya */; };
+		3027099F28943B010062DB84 /* HomeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027099E28943B010062DB84 /* HomeTarget.swift */; };
+		302709A128943B4E0062DB84 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709A028943B4E0062DB84 /* NetworkConfiguration.swift */; };
+		302709A328943C280062DB84 /* HomeNetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709A228943C280062DB84 /* HomeNetworkPath.swift */; };
+		302709A528943CE00062DB84 /* HomeRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709A428943CE00062DB84 /* HomeRequestModel.swift */; };
+		302709A828943D570062DB84 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709A728943D570062DB84 /* Encodable.swift */; };
+		302709AA28943FC60062DB84 /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709A928943FC60062DB84 /* ErrorResponseModel.swift */; };
+		302709AC28945C580062DB84 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709AB28945C580062DB84 /* AppConfiguration.swift */; };
+		302709B4289465930062DB84 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709B2289465930062DB84 /* ReelsCell.swift */; };
+		302709B5289465930062DB84 /* ReelsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302709B3289465930062DB84 /* ReelsCell.xib */; };
+		302709B8289467E40062DB84 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 302709B7289467E40062DB84 /* SDWebImage */; };
 		30C26FFE2893192500BB94EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C26FFD2893192500BB94EE /* AppDelegate.swift */; };
 		30C270002893192500BB94EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C26FFF2893192500BB94EE /* SceneDelegate.swift */; };
 		30C270072893192700BB94EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C270062893192700BB94EE /* Assets.xcassets */; };
@@ -19,6 +48,27 @@
 		30270958289328A00062DB84 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3027096028932A9D0062DB84 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3027096128932A9D0062DB84 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		30270967289333020062DB84 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3027096F289338860062DB84 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		302709712893388E0062DB84 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		30270977289339D60062DB84 /* HomeVMContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVMContract.swift; sourceTree = "<group>"; };
+		3027097E289417DE0062DB84 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		3027097F289417DE0062DB84 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		302709822894187F0062DB84 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		3027098B289431EB0062DB84 /* RepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInterface.swift; sourceTree = "<group>"; };
+		3027098E289431F80062DB84 /* HomeUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsecase.swift; sourceTree = "<group>"; };
+		30270990289432610062DB84 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		30270996289433320062DB84 /* PlaylistResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistResponseModel.swift; sourceTree = "<group>"; };
+		30270999289436CB0062DB84 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		3027099E28943B010062DB84 /* HomeTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTarget.swift; sourceTree = "<group>"; };
+		302709A028943B4E0062DB84 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		302709A228943C280062DB84 /* HomeNetworkPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkPath.swift; sourceTree = "<group>"; };
+		302709A428943CE00062DB84 /* HomeRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequestModel.swift; sourceTree = "<group>"; };
+		302709A728943D570062DB84 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		302709A928943FC60062DB84 /* ErrorResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
+		302709AB28945C580062DB84 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		302709B2289465930062DB84 /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		302709B3289465930062DB84 /* ReelsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCell.xib; sourceTree = "<group>"; };
 		30C26FFA2893192500BB94EE /* Reelz'it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reelz'it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C26FFD2893192500BB94EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30C26FFF2893192500BB94EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +81,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302709882894316D0062DB84 /* RxRelay in Frameworks */,
+				3026075C28948FE3008639B6 /* YouTubeiOSPlayerHelper in Frameworks */,
+				302709862894316D0062DB84 /* RxCocoa in Frameworks */,
+				3027098A2894316D0062DB84 /* RxSwift in Frameworks */,
+				302709B8289467E40062DB84 /* SDWebImage in Frameworks */,
+				3027099D289439B70062DB84 /* Moya in Frameworks */,
+				302607632894AD00008639B6 /* YoutubePlayerView in Frameworks */,
+				3027096B2893363A0062DB84 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +98,9 @@
 		30270954289325E30062DB84 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				302709A628943D4E0062DB84 /* Extentions */,
+				302709A028943B4E0062DB84 /* NetworkConfiguration.swift */,
+				302709AB28945C580062DB84 /* AppConfiguration.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -58,6 +119,7 @@
 		30270956289325E90062DB84 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3027096628932E0A0062DB84 /* StartingPoint */,
 				3027095A289329BA0062DB84 /* Home */,
 			);
 			path = Features;
@@ -66,6 +128,7 @@
 		30270957289326060062DB84 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				302709822894187F0062DB84 /* R.generated.swift */,
 				30270958289328A00062DB84 /* LaunchScreen.storyboard */,
 				30C270062893192700BB94EE /* Assets.xcassets */,
 			);
@@ -85,6 +148,7 @@
 		3027095B289329C50062DB84 /* presetation */ = {
 			isa = PBXGroup;
 			children = (
+				3027096D289338720062DB84 /* Logic */,
 				3027095E289329DA0062DB84 /* View */,
 			);
 			path = presetation;
@@ -93,6 +157,9 @@
 		3027095C289329CF0062DB84 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				30270998289436BD0062DB84 /* Model */,
+				3027098D289431EE0062DB84 /* Usecase */,
+				3027098B289431EB0062DB84 /* RepositoryInterface.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -100,6 +167,8 @@
 		3027095D289329D50062DB84 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				30270992289432FB0062DB84 /* Repo */,
+				30270993289432FD0062DB84 /* Model */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -107,10 +176,132 @@
 		3027095E289329DA0062DB84 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				302709B1289465800062DB84 /* Cell */,
 				3027096028932A9D0062DB84 /* HomeVC.swift */,
 				3027096128932A9D0062DB84 /* HomeVC.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3027096628932E0A0062DB84 /* StartingPoint */ = {
+			isa = PBXGroup;
+			children = (
+				30270967289333020062DB84 /* AppCoordinator.swift */,
+			);
+			path = StartingPoint;
+			sourceTree = "<group>";
+		};
+		3027096D289338720062DB84 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				30270976289339BC0062DB84 /* Coordinator */,
+				30270975289339B60062DB84 /* ViewModel */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		30270975289339B60062DB84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3027096F289338860062DB84 /* HomeViewModel.swift */,
+				30270977289339D60062DB84 /* HomeVMContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		30270976289339BC0062DB84 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				302709712893388E0062DB84 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		30270979289408C90062DB84 /* VideoCell */ = {
+			isa = PBXGroup;
+			children = (
+				3027097E289417DE0062DB84 /* VideoCell.swift */,
+				3027097F289417DE0062DB84 /* VideoCell.xib */,
+			);
+			path = VideoCell;
+			sourceTree = "<group>";
+		};
+		3027098D289431EE0062DB84 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				3027098E289431F80062DB84 /* HomeUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		30270992289432FB0062DB84 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				30270990289432610062DB84 /* HomeRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		30270993289432FD0062DB84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30270994289433010062DB84 /* Response */,
+				30270995289433040062DB84 /* Router */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30270994289433010062DB84 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				30270996289433320062DB84 /* PlaylistResponseModel.swift */,
+				302709A928943FC60062DB84 /* ErrorResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		30270995289433040062DB84 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3027099E28943B010062DB84 /* HomeTarget.swift */,
+				302709A228943C280062DB84 /* HomeNetworkPath.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		30270998289436BD0062DB84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30270999289436CB0062DB84 /* CustomError.swift */,
+				302709A428943CE00062DB84 /* HomeRequestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		302709A628943D4E0062DB84 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				302709A728943D570062DB84 /* Encodable.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		302709B0289465760062DB84 /* ReelsCell */ = {
+			isa = PBXGroup;
+			children = (
+				302709B2289465930062DB84 /* ReelsCell.swift */,
+				302709B3289465930062DB84 /* ReelsCell.xib */,
+			);
+			path = ReelsCell;
+			sourceTree = "<group>";
+		};
+		302709B1289465800062DB84 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				302709B0289465760062DB84 /* ReelsCell */,
+				30270979289408C90062DB84 /* VideoCell */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		30C26FF12893192500BB94EE = {
@@ -146,6 +337,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30C2700E2893192700BB94EE /* Build configuration list for PBXNativeTarget "Reelz'it" */;
 			buildPhases = (
+				3027096C2893380D0062DB84 /* ShellScript */,
 				30C26FF62893192500BB94EE /* Sources */,
 				30C26FF72893192500BB94EE /* Frameworks */,
 				30C26FF82893192500BB94EE /* Resources */,
@@ -155,6 +347,16 @@
 			dependencies = (
 			);
 			name = "Reelz'it";
+			packageProductDependencies = (
+				3027096A2893363A0062DB84 /* Rswift */,
+				302709852894316D0062DB84 /* RxCocoa */,
+				302709872894316D0062DB84 /* RxRelay */,
+				302709892894316D0062DB84 /* RxSwift */,
+				3027099C289439B70062DB84 /* Moya */,
+				302709B7289467E40062DB84 /* SDWebImage */,
+				3026075B28948FE3008639B6 /* YouTubeiOSPlayerHelper */,
+				302607622894AD00008639B6 /* YoutubePlayerView */,
+			);
 			productName = "Reelz'it";
 			productReference = 30C26FFA2893192500BB94EE /* Reelz'it.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +385,14 @@
 				Base,
 			);
 			mainGroup = 30C26FF12893192500BB94EE;
+			packageReferences = (
+				302709692893363A0062DB84 /* XCRemoteSwiftPackageReference "R.swift" */,
+				302709842894316D0062DB84 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				3027099B289439B70062DB84 /* XCRemoteSwiftPackageReference "Moya" */,
+				302709B6289467E40062DB84 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				3026075A28948FE3008639B6 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				302607612894AD00008639B6 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */,
+			);
 			productRefGroup = 30C26FFB2893192500BB94EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -198,21 +408,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C270072893192700BB94EE /* Assets.xcassets in Resources */,
+				30270981289417DE0062DB84 /* VideoCell.xib in Resources */,
 				3027096328932A9D0062DB84 /* HomeVC.xib in Resources */,
+				302709B5289465930062DB84 /* ReelsCell.xib in Resources */,
 				30270959289328A00062DB84 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3027096C2893380D0062DB84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"\"$SRCROOT/R.generated.swift\"",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30C26FF62893192500BB94EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30270968289333020062DB84 /* AppCoordinator.swift in Sources */,
+				30270978289339D60062DB84 /* HomeVMContract.swift in Sources */,
+				3027098F289431F80062DB84 /* HomeUsecase.swift in Sources */,
+				3027099F28943B010062DB84 /* HomeTarget.swift in Sources */,
+				302709832894187F0062DB84 /* R.generated.swift in Sources */,
+				30270991289432610062DB84 /* HomeRepository.swift in Sources */,
+				30270997289433320062DB84 /* PlaylistResponseModel.swift in Sources */,
+				302709A128943B4E0062DB84 /* NetworkConfiguration.swift in Sources */,
+				3027098C289431EB0062DB84 /* RepositoryInterface.swift in Sources */,
+				3027099A289436CB0062DB84 /* CustomError.swift in Sources */,
+				302709A528943CE00062DB84 /* HomeRequestModel.swift in Sources */,
+				30270980289417DE0062DB84 /* VideoCell.swift in Sources */,
+				302709AC28945C580062DB84 /* AppConfiguration.swift in Sources */,
 				3027096228932A9D0062DB84 /* HomeVC.swift in Sources */,
+				302709AA28943FC60062DB84 /* ErrorResponseModel.swift in Sources */,
 				30C26FFE2893192500BB94EE /* AppDelegate.swift in Sources */,
+				302709A328943C280062DB84 /* HomeNetworkPath.swift in Sources */,
+				302709B4289465930062DB84 /* ReelsCell.swift in Sources */,
+				30270970289338860062DB84 /* HomeViewModel.swift in Sources */,
+				302709A828943D570062DB84 /* Encodable.swift in Sources */,
 				30C270002893192500BB94EE /* SceneDelegate.swift in Sources */,
+				302709722893388E0062DB84 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +600,6 @@
 				INFOPLIST_FILE = "Reelz'it/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,7 +627,6 @@
 				INFOPLIST_FILE = "Reelz'it/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -413,6 +664,100 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3026075A28948FE3008639B6 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		302607612894AD00008639B6 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mukeshydv/YoutubePlayerView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		302709692893363A0062DB84 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		302709842894316D0062DB84 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		3027099B289439B70062DB84 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		302709B6289467E40062DB84 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3026075B28948FE3008639B6 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3026075A28948FE3008639B6 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+		302607622894AD00008639B6 /* YoutubePlayerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302607612894AD00008639B6 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */;
+			productName = YoutubePlayerView;
+		};
+		3027096A2893363A0062DB84 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302709692893363A0062DB84 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+		302709852894316D0062DB84 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302709842894316D0062DB84 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		302709872894316D0062DB84 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302709842894316D0062DB84 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		302709892894316D0062DB84 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302709842894316D0062DB84 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		3027099C289439B70062DB84 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3027099B289439B70062DB84 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		302709B7289467E40062DB84 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302709B6289467E40062DB84 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30C26FF22893192500BB94EE /* Project object */;
 }

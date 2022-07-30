@@ -6,12 +6,89 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import YouTubeiOSPlayerHelper
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController{
 
+    var viewModel:HomeViewModelProtocol!
+    @IBOutlet weak var uiYoutubeView: YTPlayerView!
+    private var modelCount = 0
+    private var bag:DisposeBag!
+    @IBOutlet weak var uiCollectionView: UICollectionView!
+    
+    @IBOutlet weak var uiScribbleImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        bag = DisposeBag()
+        bind()
+        configureCollection()
+        viewModel.input.onScreenAppeared.onNext(())
+    }
+    
+    private func bind(){
+        viewModel.output.onFinishFetching.asObservable().bind{[weak self] count in
+            guard let self = self else {return}
+            self.modelCount = count
+            self.uiCollectionView.reloadData()
+            self.uiCollectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: true, scrollPosition: .top)
+        }.disposed(by: self.bag)
+        
+        viewModel.output.showingVideo.bind{ [weak self] id in
+            guard let self = self else {return}
+            self.uiScribbleImage.image = nil
+            self.showVideo(withID: id)
+        }.disposed(by: bag)
+        
+    }
 
+    private func showVideo(withID id:String){
+        uiYoutubeView.transform = CGAffineTransform(scaleX: 0, y: 0)
+        self.uiYoutubeView.load(withVideoId: id)
+        self.uiYoutubeView.playVideo()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            guard let self = self else {return}
+            UIView.transition(with: self.view, duration: 1, options: .curveEaseInOut) {
+                self.uiYoutubeView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }
+        }
+    }
+    private func configureCollection(){
+        
+        uiCollectionView.collectionViewLayout = generateLayout()
+        let nib = UINib(nibName: R.nib.reelsCell.name, bundle: nil)
+        uiCollectionView.register(nib, forCellWithReuseIdentifier:R.reuseIdentifier.reelS_Cell.identifier)
+        
+    }
+    private func generateLayout()->UICollectionViewLayout{
+        let layout = UICollectionViewCompositionalLayout(sectionProvider: { section, _ in
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: itemSize, subitem: item, count: 2)
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .groupPaging
+            return section
+        })
+        return layout
+    }
+}
+
+extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return modelCount
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.reelS_Cell, for: indexPath) else {fatalError()}
+        viewModel.input.configureCell.onNext((cell,indexPath))
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.input.didSelectItemAt.onNext(indexPath)
     }
 
 }
+
