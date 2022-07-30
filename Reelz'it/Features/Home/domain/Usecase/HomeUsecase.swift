@@ -20,6 +20,7 @@ class HomeUsecase:HomeUsecaseProtocol{
     
     func fetch(onSuccess: @escaping ([Snippet]) -> Void, onFailure: @escaping (String) -> Void) {
         let request = HomeRequestModel()
+
         repo.fetch(request: request) { result in
             switch result{
             case .success(let response):
@@ -29,7 +30,7 @@ class HomeUsecase:HomeUsecaseProtocol{
                 onSuccess(snipet)
             case .failure(let error):
                 onFailure(error.description)
-                
+
             }
         }
     }

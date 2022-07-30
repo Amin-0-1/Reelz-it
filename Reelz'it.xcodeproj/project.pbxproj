@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3026075C28948FE3008639B6 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 3026075B28948FE3008639B6 /* YouTubeiOSPlayerHelper */; };
-		302607632894AD00008639B6 /* YoutubePlayerView in Frameworks */ = {isa = PBXBuildFile; productRef = 302607622894AD00008639B6 /* YoutubePlayerView */; };
 		30270959289328A00062DB84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30270958289328A00062DB84 /* LaunchScreen.storyboard */; };
 		3027096228932A9D0062DB84 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027096028932A9D0062DB84 /* HomeVC.swift */; };
 		3027096328932A9D0062DB84 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3027096128932A9D0062DB84 /* HomeVC.xib */; };
@@ -39,6 +38,8 @@
 		302709B4289465930062DB84 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302709B2289465930062DB84 /* ReelsCell.swift */; };
 		302709B5289465930062DB84 /* ReelsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302709B3289465930062DB84 /* ReelsCell.xib */; };
 		302709B8289467E40062DB84 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 302709B7289467E40062DB84 /* SDWebImage */; };
+		304608992894BBB200E738FF /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 304608982894BBB200E738FF /* SFSafeSymbols */; };
+		3046089F2894C4A000E738FF /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3046089E2894C4A000E738FF /* ProgressHUD */; };
 		30C26FFE2893192500BB94EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C26FFD2893192500BB94EE /* AppDelegate.swift */; };
 		30C270002893192500BB94EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C26FFF2893192500BB94EE /* SceneDelegate.swift */; };
 		30C270072893192700BB94EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C270062893192700BB94EE /* Assets.xcassets */; };
@@ -81,13 +82,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304608992894BBB200E738FF /* SFSafeSymbols in Frameworks */,
 				302709882894316D0062DB84 /* RxRelay in Frameworks */,
 				3026075C28948FE3008639B6 /* YouTubeiOSPlayerHelper in Frameworks */,
+				3046089F2894C4A000E738FF /* ProgressHUD in Frameworks */,
 				302709862894316D0062DB84 /* RxCocoa in Frameworks */,
 				3027098A2894316D0062DB84 /* RxSwift in Frameworks */,
 				302709B8289467E40062DB84 /* SDWebImage in Frameworks */,
 				3027099D289439B70062DB84 /* Moya in Frameworks */,
-				302607632894AD00008639B6 /* YoutubePlayerView in Frameworks */,
 				3027096B2893363A0062DB84 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +357,8 @@
 				3027099C289439B70062DB84 /* Moya */,
 				302709B7289467E40062DB84 /* SDWebImage */,
 				3026075B28948FE3008639B6 /* YouTubeiOSPlayerHelper */,
-				302607622894AD00008639B6 /* YoutubePlayerView */,
+				304608982894BBB200E738FF /* SFSafeSymbols */,
+				3046089E2894C4A000E738FF /* ProgressHUD */,
 			);
 			productName = "Reelz'it";
 			productReference = 30C26FFA2893192500BB94EE /* Reelz'it.app */;
@@ -391,7 +394,8 @@
 				3027099B289439B70062DB84 /* XCRemoteSwiftPackageReference "Moya" */,
 				302709B6289467E40062DB84 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				3026075A28948FE3008639B6 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
-				302607612894AD00008639B6 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */,
+				304608972894BBB200E738FF /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+				3046089D2894C4A000E738FF /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 30C26FFB2893192500BB94EE /* Products */;
 			projectDirPath = "";
@@ -674,14 +678,6 @@
 				kind = branch;
 			};
 		};
-		302607612894AD00008639B6 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mukeshydv/YoutubePlayerView";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		302709692893363A0062DB84 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
@@ -714,6 +710,22 @@
 				kind = branch;
 			};
 		};
+		304608972894BBB200E738FF /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+		3046089D2894C4A000E738FF /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -721,11 +733,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3026075A28948FE3008639B6 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
 			productName = YouTubeiOSPlayerHelper;
-		};
-		302607622894AD00008639B6 /* YoutubePlayerView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 302607612894AD00008639B6 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */;
-			productName = YoutubePlayerView;
 		};
 		3027096A2893363A0062DB84 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -756,6 +763,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 302709B6289467E40062DB84 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		304608982894BBB200E738FF /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 304608972894BBB200E738FF /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+		3046089E2894C4A000E738FF /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3046089D2894C4A000E738FF /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

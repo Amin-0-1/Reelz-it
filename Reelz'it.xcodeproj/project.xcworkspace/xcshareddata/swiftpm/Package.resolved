@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "ProgressHUD",
+        "repositoryURL": "https://github.com/relatedcode/ProgressHUD",
+        "state": {
+          "branch": "master",
+          "revision": "3ae24c855fff8fd40924a121ab315c125720d917",
+          "version": null
+        }
+      },
+      {
         "package": "R.swift.Library",
         "repositoryURL": "https://github.com/mac-cain13/R.swift.Library",
         "state": {
@@ -56,20 +65,20 @@
         }
       },
       {
+        "package": "SFSafeSymbols",
+        "repositoryURL": "https://github.com/SFSafeSymbols/SFSafeSymbols",
+        "state": {
+          "branch": "stable",
+          "revision": "8c8b708a17192e4faa7c52ee68559609e6e2c8bc",
+          "version": null
+        }
+      },
+      {
         "package": "YouTubeiOSPlayerHelper",
         "repositoryURL": "https://github.com/youtube/youtube-ios-player-helper",
         "state": {
           "branch": "master",
           "revision": "f57129cd4380ec0a74dd3a59da3270a1d653d59b",
-          "version": null
-        }
-      },
-      {
-        "package": "YoutubePlayerView",
-        "repositoryURL": "https://github.com/mukeshydv/YoutubePlayerView",
-        "state": {
-          "branch": "master",
-          "revision": "a1db7af5a1e074978687632756eae74c61923e99",
           "version": null
         }
       }

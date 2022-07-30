@@ -30,10 +30,14 @@ class HomeViewModel:HomeViewModelProtocol{
     private func bind(){
         input.onScreenAppeared.bind{ [weak self] _ in
             guard let self = self else {return}
+            self.output.showLoadingSubject.onNext(())
             self.usecase.fetch { list in
+                self.output.hideLoadingSubject.onNext(())
                 self.relayData.accept(list)
                 self.output.onFinishFetchingSubj.onNext(list.count)
             } onFailure: { error in
+//                self.output.hideLoadingSubject.onNext(())
+                self.output.showErrorSubject.onNext(error)
                 print(error)
             }
 
@@ -57,16 +61,31 @@ class HomeViewModel:HomeViewModelProtocol{
 
 
 struct HomeVMOutput:HomeOutput{
+    var showLoading: Driver<Void>
+    var hideLoading: Driver<Void>
+    var showError: Driver<String>
+    
     var showingVideo: Observable<String>
     var onFinishFetching: Driver<Int>
     
     fileprivate var onFinishFetchingSubj: PublishSubject<Int>
     fileprivate var showingVideoSubject: PublishSubject<String>
+    fileprivate var showLoadingSubject: PublishSubject<Void>
+    fileprivate var showErrorSubject: PublishSubject<String>
+    fileprivate var hideLoadingSubject:PublishSubject<Void>
     init(){
         onFinishFetchingSubj = PublishSubject()
         onFinishFetching = onFinishFetchingSubj.asDriver(onErrorJustReturn: 0)
         showingVideoSubject = PublishSubject()
         showingVideo = showingVideoSubject.asObservable()
+        
+        showLoadingSubject = PublishSubject()
+        showErrorSubject = PublishSubject()
+        hideLoadingSubject = PublishSubject()
+        
+        showLoading = showLoadingSubject.asDriver(onErrorJustReturn: ())
+        hideLoading = hideLoadingSubject.asDriver(onErrorJustReturn: ())
+        showError = showErrorSubject.asDriver(onErrorJustReturn: "")
     }
 
 }

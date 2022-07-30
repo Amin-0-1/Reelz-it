@@ -29,6 +29,9 @@ struct HomeVMInput:HomeInput{
 protocol HomeOutput{
     var onFinishFetching:Driver<Int> {get}
     var showingVideo:Observable<String> {get}
+    var showLoading:Driver<Void>{get}
+    var hideLoading:Driver<Void>{get}
+    var showError:Driver<String>{get}
 }
 
 protocol HomeViewModelProtocol{

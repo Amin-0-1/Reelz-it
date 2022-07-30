@@ -9,16 +9,20 @@ import UIKit
 import RxCocoa
 import RxSwift
 import YouTubeiOSPlayerHelper
+import SFSafeSymbols
+import SwiftMessages
+import ProgressHUD
 
 class HomeVC: UIViewController{
 
-    var viewModel:HomeViewModelProtocol!
+    
     @IBOutlet weak var uiYoutubeView: YTPlayerView!
+    @IBOutlet weak var uiCollectionView: UICollectionView!
+    @IBOutlet weak var uiScribbleImage: UIImageView!
+    
+    var viewModel:HomeViewModelProtocol!
     private var modelCount = 0
     private var bag:DisposeBag!
-    @IBOutlet weak var uiCollectionView: UICollectionView!
-    
-    @IBOutlet weak var uiScribbleImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         bag = DisposeBag()
@@ -41,6 +45,19 @@ class HomeVC: UIViewController{
             self.showVideo(withID: id)
         }.disposed(by: bag)
         
+        viewModel.output.hideLoading.asObservable().bind{ [weak self] _ in
+            guard let self = self else {return}
+            ProgressHUD.dismiss()
+        }.disposed(by: bag)
+        viewModel.output.showError.asObservable().bind{ msg in
+            ProgressHUD.showError(msg)
+        }.disposed(by: bag)
+        
+        viewModel.output.showLoading.asObservable().bind{ [weak self] _ in
+            ProgressHUD.showProgress(1)
+            ProgressHUD.colorProgress = .red
+            
+        }.disposed(by: bag)
     }
 
     private func showVideo(withID id:String){
