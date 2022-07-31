@@ -45,15 +45,14 @@ class HomeVC: UIViewController{
             self.showVideo(withID: id)
         }.disposed(by: bag)
         
-        viewModel.output.hideLoading.asObservable().bind{ [weak self] _ in
-            guard let self = self else {return}
+        viewModel.output.hideLoading.asObservable().bind{ _ in
             ProgressHUD.dismiss()
         }.disposed(by: bag)
         viewModel.output.showError.asObservable().bind{ msg in
             ProgressHUD.showError(msg)
         }.disposed(by: bag)
         
-        viewModel.output.showLoading.asObservable().bind{ [weak self] _ in
+        viewModel.output.showLoading.asObservable().bind{  _ in
             ProgressHUD.showProgress(1)
             ProgressHUD.colorProgress = .red
             
@@ -105,6 +104,16 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource{
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.input.didSelectItemAt.onNext(indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let animationDuration: Double = 1.0
+        cell.alpha = 0.1
+        cell.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        UIView.animate(withDuration: animationDuration, delay: 0.1, usingSpringWithDamping: 0.5, initialSpringVelocity: 10, options: [], animations: {
+            cell.alpha = 1
+            cell.transform = .identity
+        })
     }
 
 }
